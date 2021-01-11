@@ -1,0 +1,29 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #5e3fde;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osz-font-smoothing: grayscale;
+}
+
+.btn-toggle:hover {
+  background: #d0c7f7;
+}
+
+.game {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin-bottom: 20px;
+}

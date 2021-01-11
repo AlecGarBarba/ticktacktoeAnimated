@@ -1,0 +1,52 @@
+.player__icon {
+  width: 40px;
+  height: 40px;
+  background: #ffbec6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding-left: 8px;
+}
+
+.icon2 {
+  height: 50%;
+
+  cursor: pointer;
+}
+
+.icon__line2 {
+  fill: none;
+  stroke: #f05483;
+  stroke-width: 20;
+  stroke-miterlimit: 10;
+  transition: stroke 0.2s;
+  stroke-linecap: round;
+}
+
+.player__icon .icon {
+  width: 50px !important;
+  height: 60px !important;
+}
+/*******************Transitions*******************/
+.player__icon--exit {
+  /*No need to add anything here*/
+}
+.player__icon--exit-active {
+  transform: translateX(-48px);
+  transition: transform 800ms cubic-bezier(0.83, 0, 0.17, 1);
+}
+.player__icon--exit-done {
+}
+
+.player__icon--enter {
+  transform: translateX(-48px);
+}
+.player__icon--enter-active {
+  transform: translateX(0);
+  transition: transform 800ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.player__icon--enter-done {
+  transform: translateX(0);
+}
